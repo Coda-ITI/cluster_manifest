@@ -4,19 +4,19 @@
     <remote name="yocto"  fetch="https://github.com/yoctoproject" />
     <remote name="oe"     fetch="https://github.com/openembedded" />
     <remote name="rpi"    fetch="https://github.com/agherzan" />
-    <remote name="qt"     fetch="https://github.com/YoeDistro" />
+    <remote name="qt"     fetch="https://github.com/shr-project" />
     <remote name="coda"   fetch="https://github.com/Coda-ITI" />
 
 
     <project name="poky" path="sources/poky" remote="yocto"                        revision="scarthgap"/>
     <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="scarthgap"/>
     <project name="meta-raspberrypi" path="sources/meta-raspberrypi" remote="rpi" revision="scarthgap" />
-    <project name="meta-qt6" path="sources/meta-qt6" remote="qt"                        revision="6.8" />
+    <project name="meta-qt6" path="sources/meta-qt6" remote="qt"            revision="jansa/scarthgap" />
     <project name="meta-coda-distro" path="sources/meta-coda-distro" remote="coda"     revision="main" />
 
     <project name="cluster-hooks" path="sources/cluster-hooks" remote="coda" revision="main" />
-    <repo-hooks in-project="Coda-ITI/cluster-hooks" enabled-list="post-sync" />    
-
+    <repo-hooks in-project="cluster-hooks" enabled-list="post-sync" />
+    
   </manifest>
 
 
