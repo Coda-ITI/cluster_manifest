@@ -12,11 +12,11 @@
     <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="scarthgap"/>
     <project name="meta-raspberrypi" path="sources/meta-raspberrypi" remote="rpi" revision="scarthgap" />
     <project name="meta-qt6" path="sources/meta-qt6" remote="qt"            revision="jansa/scarthgap" />
-    <project name="meta-coda-distro" path="sources/meta-coda-distro" remote="coda"     revision="main" />
+    <project name="meta-coda" path="sources/meta-coda" remote="coda"        revision="rpi_cluster_can" />
 
     <project name="cluster-hooks" path="sources/cluster-hooks" remote="coda" revision="main" />
     <repo-hooks in-project="cluster-hooks" enabled-list="post-sync" />
-    
+
   </manifest>
 
 
